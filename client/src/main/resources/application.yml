@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: client
+
+grpc:
+  client:
+    grpc-demo-server:       #<-This name is use as string define @GrpcClient()
+      address: localhost:9090  #This is the address of running grpc-server
+      negotiationType: plaintext   #This should define for accessing without SSL
